@@ -20,6 +20,7 @@ import org.json.JSONObject;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.Calendar;
 import java.util.Locale;
 
 public class Utils {
@@ -154,7 +155,6 @@ public class Utils {
 
         return jsonObject;
     }
-
 
     public static double getNearedDouble(double originalDouble){
         double value = 0.0;
@@ -292,5 +292,27 @@ public class Utils {
             }
 
         }
+    }
+
+    public static String getDateString(long timestamp){
+        String dateString = "";
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(timestamp);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int month = calendar.get(Calendar.MONTH);
+        int year = calendar.get(Calendar.YEAR);
+        dateString = day + "/" + month + "/" + year;
+
+        return dateString;
+    }
+
+    public static String getTimeString(long timestamp){
+        String timeString = "";
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(timestamp);
+        int hour = calendar.get(Calendar.HOUR);
+        int minute = calendar.get(Calendar.MINUTE);
+        timeString = hour + ":" + minute;
+        return timeString;
     }
 }
