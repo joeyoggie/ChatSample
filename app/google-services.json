@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "315540562177",
+    "firebase_url": "https://elvesapp-3f7cd.firebaseio.com",
+    "project_id": "elvesapp-3f7cd",
+    "storage_bucket": "elvesapp-3f7cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315540562177:android:c1f6789184223dc8",
+        "android_client_info": {
+          "package_name": "com.elvesapp.chatsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315540562177-reobr2vng8vko3shmglcik6s2mog4u3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elvesapp.chatsample",
+            "certificate_hash": "57c6b93d7890bd0ad8b1d02a2ef94944644d2b12"
+          }
+        },
+        {
+          "client_id": "315540562177-gp59a49dujodjlkua4rpqm4snlaphk66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm1cigvcNdu3yxk1GUBbF6fRpQi6Hwn2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315540562177-gp59a49dujodjlkua4rpqm4snlaphk66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
