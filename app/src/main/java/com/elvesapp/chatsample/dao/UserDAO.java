@@ -21,8 +21,8 @@ public abstract class UserDAO {
     @Query("SELECT * FROM user WHERE name LIKE :name LIMIT 1")
     public abstract User findByName(String name);
 
-    @Query("SELECT * FROM user WHERE phone_number LIKE :phoneNumber LIMIT 1")
-    public abstract User findByPhone(String phoneNumber);
+    @Query("SELECT * FROM user WHERE id LIKE :id LIMIT 1")
+    public abstract User findByID(long id);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public abstract void insertAll(User... users);
